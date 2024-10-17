@@ -1,6 +1,6 @@
 
 # ShareRT-Location 📍
-This is a payload made with Ducky Script that shares the real time location of a device into your Mail or Webhook. 
+This is a payload made with Ducky Script that shares the real time location of a device to your Webhook. This scripts run with *Flipper Zero*. This script opens Terminal, fetches the public IP address of the device, and sends it to a Discord webhook. It uses curl to send the IP without JSON.
 
 
 ## Authors
