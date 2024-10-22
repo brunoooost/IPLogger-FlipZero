@@ -1,13 +1,13 @@
 
-# IPLogger-FlipZero by bst04
+# 📍 IPLogger-FlipZero by bst04
 
-## Description
+## ℹ️ Description
 
 This script, created by bst04, is designed to work on macOS systems. It opens Terminal, fetches the public IP address of the device, and sends it to a Discord webhook using `curl`.
 
 ---
 
-## Technical Explanation
+## 📖 Technical Explanation
 
 1. **Initialization**:
     - `DELAY 500`: Waits for 0.5 seconds to ensure the system is ready.
@@ -29,7 +29,7 @@ This script, created by bst04, is designed to work on macOS systems. It opens Te
 
 ---
 
-## Usage
+## 📜 Usage
 
 1. Copy the payload script to your DuckyScript-enabled device.
 2. Ensure the device is connected to a macOS system.
